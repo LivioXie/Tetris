@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tetris</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="game-info">
+            <h1>Tetris</h1>
+            <div class="score-container">
+                <p>Score: <span id="score">0</span></p>
+                <p>Lines: <span id="lines">0</span></p>
+                <p>Level: <span id="level">1</span></p>
+            </div>
+            <div class="next-piece">
+                <p>Next:</p>
+                <div id="next-piece-display"></div>
+            </div>
+        </div>
+        
+        <div class="game-board" id="game-board">
+            <!-- Game cells will be created by JavaScript -->
+        </div>
+        
+        <div class="button-container">
+            <button class="btn" id="left">
+                <i class="ri-arrow-left-line"></i>
+            </button>
+            <button class="btn" id="rotate">
+                <i class="ri-arrow-clockwise-line"></i>
+            </button>
+            <button class="btn" id="right">
+                <i class="ri-arrow-right-line"></i>
+            </button>
+            <button class="btn" id="down">
+                <i class="ri-arrow-down-line"></i>
+            </button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
